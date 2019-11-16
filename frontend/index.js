@@ -56,7 +56,7 @@ navigator.serviceWorker.ready
         subscription: subscription,
         payload: payload,
         delay: delay,
-        ttl: ttl,
+        ttl: ttl
       }),
     });
   };

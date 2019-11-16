@@ -21,12 +21,14 @@ self.addEventListener('push', function (event) {
       return fetch('http://localhost:4000/getPayload?endpoint=' + endpoint);
     })
     .then(function (response) {
+      console.log(response)
       return response.text();
     })
     .then(function (payload) {
       // Show a notification with title 'ServiceWorker Cookbook' and use the payload
       // as the body.
-      self.registration.showNotification('123', {
+      console.log(payload)
+      self.registration.showNotification('通知', {
         body: payload,
         icon: '123.jpg',
       });
