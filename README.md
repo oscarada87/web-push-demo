@@ -5,7 +5,7 @@ This is the web notification demo code
 ## Usage
 To launch backend:
 
-```sh
+```bash=
 cd backend
 npm install
 node index.js
@@ -13,7 +13,7 @@ node index.js
 
 To launch frontend:
 
-```sh
+```bash=
 cd frontend
 npm install -g live-server
 live-server
